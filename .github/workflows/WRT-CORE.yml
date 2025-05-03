@@ -143,6 +143,12 @@ jobs:
             echo "caches cleanup done!"
           fi
 
+      - name: Add Custom FEED
+        run: |
+          cd ./wrt/
+          $GITHUB_WORKSPACE/Scripts/01_path.sh
+
+
       - name: Update Feeds
         run: |
           cd ./wrt/
