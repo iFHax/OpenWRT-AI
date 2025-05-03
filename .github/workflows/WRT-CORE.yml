@@ -148,12 +148,12 @@ jobs:
           cd ./wrt/
           $GITHUB_WORKSPACE/Scripts/01_path.sh
 
-      - name: Default Settings
-        run: | 
-         cd ./wrt/
-         mkdir files
-         cd files
-         git clone https://github.com/iFHax/etc.git
+      # - name: Default Settings
+      #  run: | 
+      #   cd ./wrt/
+      #   mkdir files
+      #   cd files
+      #   git clone https://github.com/iFHax/etc.git
 
           
       - name: Update Feeds
