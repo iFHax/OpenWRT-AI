@@ -167,7 +167,7 @@ jobs:
         run: |
           cd ./wrt/
 
-          cat $GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt >> .config
+          curl -L https://raw.githubusercontent.com/iFHax/OpenWRT-AI/main/Config/AW1000.txt -o .config
 
           $GITHUB_WORKSPACE/Scripts/Settings.sh
 
